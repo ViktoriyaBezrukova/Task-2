@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Form</title>
+</head>
+
+<body>
+    <section class="questions">
+        <div class="container">
+            <div class="pop-up">
+                <form class="form__inner" id="add-form">
+                    <h2 class="questions__title">Транспортные средства и водители</h2>
+                    <div class="form__top">
+                        <div class="form__top-row">
+                            <label class="form__top-number ">Гос номер
+                                <input class="form__input form__input-state" name='state-number' data-state-number
+                                    placeholder="Укажите гос-номер">
+                                <p class="form__state-error  none">Проверьте правильность ввода!</p>
+                            </label>
+                        </div>
+                        <div class="form__top-row">
+                            <label class="form__top-transport">Транспортное средство
+                                <input type="text" class="form__input" name='transport' data-number-text
+                                    placeholder="Транспортное средство">
+                            </label>
+                        </div>
+                        <div class="form__top-row">
+                            <label class="form__top-date">Ориентировочная дата прибытия к покупателю
+                                <div class="date__block"><input class="date" name='date-user' type="text"
+                                        onfocus="(this.type='date')" onblur="if(!this.value)this.type='text'"
+                                        placeholder="Дата*"></div>
+                            </label>
+                        </div>
+                    </div>
+
+                    <h2 class="about__title">Данные о водителе</h2>
+                    <div class="form__about">
+                        <div class="form__about-row">
+                            <label class="form__about-number">ФИО
+                                <input type="text" class="form__input" data-text placeholder="Укажите ФИО водителя">
+                            </label>
+                        </div>
+                        <div class="form__about">
+                            <label class="form__about-transport">Пасспортные данные
+                                <div class="passport__block">
+                                    <input maxlength="4" class="form__input-series" name='series'
+                                        onkeypress="return (event.charCode == 8 || event.charCode == 0 || event.charCode == 13) ? null : event.charCode >= 48 && event.charCode <= 57"
+                                        placeholder="Серия">
+                                    <input maxlength="6" class="form__input-number" name='number'
+                                        onkeypress="return (event.charCode == 8 || event.charCode == 0 || event.charCode == 13) ? null : event.charCode >= 48 && event.charCode <= 57"
+                                        placeholder="Номер">
+                                </div>
+                            </label>
+                        </div>
+                        <div class="form__about-row">
+                            <label class="form__about-number">Кем выдан
+                                <input type="text" class="form__input" id="input-text" name='who-take' data-text
+                                    placeholder="Кем выдан">
+                            </label>
+                        </div>
+                        <div class="form__top-row">
+                            <label class="form__top-date">Когда выдан
+                                <div class="date__block">
+                                    <input class="date" name="date" type="text" onfocus="(this.type='date')"
+                                        onblur="if(!this.value)this.type='text'" placeholder="Когда выдан">
+                                </div>
+
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="buttons">
+                        <button class="send__btn" type="submit">Отправить</button>
+                        <button class="cancel__btn" type="reset">Отменить</button>
+                    </div>
+                </form>
+            </div>
+
+
+        </div>
+    </section>
+</body>
+<script src="https://unpkg.com/imask"></script>
+<script src="js/script.js"></script>
+
+</html>

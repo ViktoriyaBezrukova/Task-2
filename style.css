@@ -1,0 +1,94 @@
+html{
+    background-color: rgb(56, 54, 54);
+}
+body{
+    font-family: sans-serif;
+}
+.container{
+    max-width: 1330px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+label{
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+form{
+    margin: 0 auto;
+}
+
+.form__input, .date{
+    display: block;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    padding: 10px 0 10px 5px;
+    width: 100%;
+}
+.form__input-number{
+    padding: 10px 0 10px 5px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    width: 47%;
+}
+
+.form__input-series{
+    padding: 10px 0 10px 5px;
+    width: 46.5%;
+}
+
+.form__about-row, .form__top-row{
+    width: 97%;
+    padding-right: 15px;
+}
+
+.form__inner{
+    background-color: #FFF;
+    max-width: 500px;
+    border: 2px solid #000;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.form__about-transport{
+    display: block;
+}
+
+.send__btn{
+    border: 1px solid #000;
+    background-color: #000;
+    color: #FFF;
+    padding: 13px 25px;
+    border-radius: 4px;
+}
+
+.cancel__btn{
+    border: 1px solid #000;
+    background-color: #FFF;
+    color: #000;
+    padding: 13px 25px;
+    border-radius: 4px;
+}
+/* ERROR */
+
+.error input{
+    border-color: red;
+    background-color: #FFF;
+}
+.error{
+    border-color: red;
+    background-color: #FFF;
+}
+
+.error-label, .form__state-error{
+    font-size: 12px;
+    display: block;
+    margin-bottom: 5px;
+    color: rgb(156, 56, 56);
+}
+
+
+.none{
+    display: none;
+}
